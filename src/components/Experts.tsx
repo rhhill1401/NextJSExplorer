@@ -5,9 +5,9 @@ import DescriptionLight from '@/shared/DescriptionLight'
 
 function Experts() {
   return (
-    <div className=" mt-7 grid bg-brown-medium container mx-auto min-w-[100vw] max-h-[60rem] grid-cols-1 lg:grid-cols-2 gap-x-24 items-center p-12 ">
+    <div className=" mt-7 grid bg-brown-medium container mx-auto min-w-[100vw] grid-cols-1 lg:grid-cols-2 gap-x-24 items-center p-12 ">
       <div className="col-span-1 flex justify-center lg:justify-end items-center  ">
-        <Image src={expert} className="max-w-7xl lg:max-h-fit  " alt="image" />
+        <Image src={expert} className="max-w-7xl lg:max-h-fit" alt="image" />
       </div>
       <div>
         <DescriptionLight
