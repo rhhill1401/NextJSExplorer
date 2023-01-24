@@ -1,0 +1,109 @@
+$primary-color: #333078;
+$heading-font-family: "Cadiz-Bold";
+$body-font-family: "Cadiz-Regular";
+
+.socialBanner {
+  margin-top: 106px;
+  max-width: 1260px;
+  min-height: 640px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+@font-face {
+  font-family: "Cadiz-Regular";
+  src: url(/explorer/Font/Cadiz-Regular.woff) format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Cadiz-Bold";
+  src: url(/explorer/Font/Cadiz-Bold.woff) format("opentype");
+  font-weight: bold;
+}
+
+.gridContainer {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 816px;
+  max-height: 523px;
+  column-gap: 102px;
+  grid-template-areas: "first second";
+
+  .first {
+    grid-area: first;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 400px;
+    align-self: center;
+    justify-content: flex-end;
+  }
+  .second {
+    grid-area: second;
+    max-width: 866.73px;
+    justify-content: center;
+    align-self: center;
+    padding: 0px 40px;
+
+    .secondInner {
+      grid-area: first;
+      max-width: 307px;
+
+      height: fit-content;
+      display: grid;
+      grid-template-areas:
+        "row1"
+        "row2"
+        "row3";
+      grid-gap: 27px;
+
+      .row1 {
+        display: flex;
+        color: $primary-color;
+        h1 {
+          margin: 0px;
+          font-family: $heading-font-family;
+        }
+      }
+
+      .row2 {
+        display: flex;
+        justify-content: center;
+        font-family: $body-font-family;
+        margin: 0px;
+        color: $primary-color;
+      }
+
+      .row3 {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@mixin button-styles {
+  width: 144px;
+  height: 44px;
+  background-color: $primary-color;
+  color: #ffffff;
+  border: 0;
+  border-radius: 4px;
+  padding: 0px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 16px;
+
+  &:hover {
+    transform: scale(0.98);
+    opacity: 0.9;
+  }
+}
+
+.buttonPrimary {
+  @include button-styles;
+}

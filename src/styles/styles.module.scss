@@ -1,0 +1,30 @@
+$primary-color: #333078;
+
+.container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+
+  .links {
+    display: flex;
+    color: $primary-color;
+  }
+}
+
+.navContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 51px;
+
+  .navLinks {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    color: $primary-color;
+    li {
+      margin-right: 10px;
+    }
+  }
+}
