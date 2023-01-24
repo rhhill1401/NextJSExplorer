@@ -1,46 +1,43 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-body{
+body {
   background-color: #f6f5f9;
-  margin: 0px,
+  margin: 0px;
 }
 
 @font-face {
-  font-family: "Berlingske Serif";
-  src: url("/explorer/Font/BerlingskeSerif-Md.ttf");
+  font-family: 'Berlingske Serif';
+  src: url('../../Font/BerlingskeSerif-Regular.ttf');
   font-weight: medium;
   font-style: medium;
 }
 
 @font-face {
-  font-family: "Cadiz-Regular";
-  src: url(/explorer/Font/Cadiz-Regular.woff) format("opentype");
+  font-family: 'Cadiz-Regular';
+  src: url(../../Font/Cadiz-Regular.woff) format('opentype');
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "Cadiz-Medium";
-  src: url(/explorer/Font/Cadiz-Medium.woff2) format("opentype");
- 
+  font-family: 'Cadiz-Medium';
+  src: url(../../Font/Cadiz-Medium.woff) format('opentype');
 }
 
 .text-custom {
   color: #333078;
-  font-family: "Berlingske Serif";
+  font-family: 'Berlingske Serif';
 }
 
 .text-cadiz {
   color: #333078;
-  font-family: "Cadiz-Regular";
+  font-family: 'Cadiz-Regular';
 }
 
 .text-cadiz-m {
-  font-family: "Cadiz-Medium";
+  font-family: 'Cadiz-Medium';
 }
 .text-cadiz-no-color {
-  font-family: "Cadiz-Regular";
+  font-family: 'Cadiz-Regular';
 }
-
- 
